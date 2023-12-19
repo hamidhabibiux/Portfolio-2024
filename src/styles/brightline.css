@@ -81,19 +81,77 @@ p.chipText{
     gap: 0.5rem;
 }
 
+
+
+/**********************************
+        
+        Image Processing
+
+**********************************/
+
+.imagecontainer{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    background:#E2D3C8;
+    border-radius: 10px;
+}
+
+.twoColumnFullSizeImage{
+    max-width: 80%;
+    width: 80%;
+    height: auto;
+    
+}
+.image-resizer{
+    flex-shrink: 0;
+    width: 25%; /* Set the width of the image to 50% of the container */
+    max-width: 50%; /* Set the maximum width to ensure it doesn't exceed 50% */
+    height: 25%;
+    object-fit: cover;
+    margin-left: 5rem;
+}
+
+.fullSizePrototype{
+    max-width: 100%;
+    height:auto;
+    background: #E2D3C8;
+    border-radius: 10px;
+}
+
+.fullSizeImage{
+    max-width: 100%;
+    width: 100%;
+    height:auto;
+    border-radius: 8px;
+}
+
+.fullSizeImagewMargin{
+    max-width: 100%;
+    height:auto;
+    margin-top: 2rem;
+    margin-bottom:2rem;
+}
+
+
 /***********************************
         Case Study Content
 ***********************************/
 
-.casestudy-container{
-margin-top: 2.13rem;
+.casestudy-container{ /*36px margin top */
+margin-top: 2.25rem;
 }
 
-#keyIntiatives{
+.casestudy-container48{
+    margin-top: 3rem;
+}
+
+#flex24px{ /*24px flex */
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1.25rem;
+    gap: 1.5rem;
 }
 
 .eightpxFlex{
@@ -101,4 +159,9 @@ margin-top: 2.13rem;
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5rem;
+}
+
+.fourtyeightpxFlex{
+    display: flex;
+    flex-direction: column
 }
