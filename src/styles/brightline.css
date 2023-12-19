@@ -8,6 +8,7 @@
 .hero-image{
     padding: 3vh;
     background-color: #E2D3C8;
+    text-align: center;
 }
 h2{
     font-size: 2.25rem;
@@ -43,6 +44,11 @@ p {
 flex-direction: column;
 align-items: flex-start;
 gap: 1rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
 
 /********CHIPS******/
