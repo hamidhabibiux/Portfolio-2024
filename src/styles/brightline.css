@@ -51,6 +51,31 @@ img {
     height: auto;
 }
 
+/**************************
+
+        Text Specifiers
+
+***************************/
+
+p.graySpacedSectionHeader{
+    letter-spacing: .05rem;
+    color: #757575;
+    margin-bottom: 2rem;
+}
+
+.graySubText{
+    color: #696767;
+}
+
+b{
+    font-family: 'Inter Var';
+    line-height: 1.5em;
+    font-size: 0.875rem;
+    font-weight: 800;
+}
+
+
+
 /********CHIPS******/
 .chipText{
 
@@ -147,6 +172,13 @@ margin-top: 2.25rem;
     margin-top: 3rem;
 }
 
+#flex16px{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
 #flex24px{ /*24px flex */
     display: inline-flex;
     flex-direction: column;
@@ -164,4 +196,48 @@ margin-top: 2.25rem;
 .fourtyeightpxFlex{
     display: flex;
     flex-direction: column
+}
+
+.section-topmargin{
+    margin-top: 3rem;
+}
+
+/***********************
+    Grid columns
+***********************/
+.twocolumn-grid{
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    gap: 10%;
+    margin-top: 3rem;
+}
+
+.textinTwoColumn{
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem;
+}
+
+.threeColumn{
+    display: grid;
+    grid-template-columns:repeat(3, auto);
+    gap: 1.5rem;
+}
+
+.inner-section-wpadding{
+
+        margin-top:2rem;
+    
+}
+
+/*************************
+
+        Media Query
+
+**************************/
+@media screen and (max-width:430px){ /*Sets mobile margin to 16px */
+
+.casestudy-contentpadding{
+    padding:1vh;
+}
 }
