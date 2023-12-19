@@ -2,12 +2,15 @@
 import { Image } from "astro:assets";
 
 import '../styles/brightline.css';
+/**************Image Imports */
+
 import digitalcontentgif from '../assets/DigitalContent.gif';
 ---
 
 <div class="hero-image">
-    <img src={digitalcontentgif.src} width={digitalcontentgif.width} height={digitalcontentgif.height}/>
+    <img src={digitalcontentgif.src} width={digitalcontentgif.width*.5} height={digitalcontentgif.height*.5} style="max-width: 100%; width:50%; height: auto;"/>
 </div>
+<div class="casestudy-contentpadding">
 <div class="casestudy-hero">
     <h2>Brightline Provider Experience</h2>
     <h4 style="color: #B8B8B8;">Enabling behavioral therapy through digital health tools</h4>
@@ -43,3 +46,4 @@ import digitalcontentgif from '../assets/DigitalContent.gif';
     <h4>Key Intiatives</h4>
     <p>I was a key partner in the discovery and design of 2 care initiatives on the Provider Experience Team, focusing on providing tools to help prepare providers prepare for sessions.</p>
     </div>
+</div>
