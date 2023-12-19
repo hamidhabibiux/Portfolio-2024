@@ -1,5 +1,7 @@
 ---
+import SideBar from '../layouts/HomeView.astro';
 
+import '../styles/global.css'
 ---
 
 <html lang="en">
@@ -8,9 +10,18 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Hamid Habibi</title>
+		<link rel="preconnect" href="https://rsms.me/">
+		<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+		<style>
+			.sidebar-container{
+				padding: 3vh;
+			}
+		</style>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<div class="sidebar-container">
+			<SideBar />
+		</div>
 	</body>
 </html>

@@ -1,0 +1,138 @@
+---
+//import '../styles/HomeView.css';
+import SocialIcons from '../components/SocialMediaIcons.astro';
+---
+<style> 
+
+body {
+    /*max-width: 679px;*/
+    background-color: #FBFBFB;
+}
+
+h1 {
+    font-family: 'Inter Var';
+    font-size: 32px;
+    font-weight: bold;
+    color: #5B483E;
+    margin-block: 0;
+}
+p {
+    font-family: 'Inter Var';
+    font-size: 14px;
+    color: #515155;
+}
+span {
+    font-family: 'Inter Var';
+    font-size: 14px;
+    color: #515155;
+
+}
+
+/************************
+
+        SideBar Styling
+
+*************************/
+
+.theHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.socialIcon {
+    text-decoration: none;
+}
+
+.casestudyContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.indexHeroMessage {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.casestudyList{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.indexContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4rem;
+}
+
+.casestudyItem{
+    display: grid;
+    grid-template-columns: 2.5fr 5.5fr 2fr;
+    gap: 10px;
+    padding-block: 4px;
+}
+
+span.casestudyDate{
+    text-align: right;
+}
+
+.deselected span{ /*use this for hover effect*/
+    color:#C0B5AF;
+}
+
+/**********************************
+
+            Media Queries
+
+**********************************/
+
+
+
+</style>
+
+
+<div class="indexContainer">
+    <div class="theHeader">
+        <h1>Hamid Habibi</h1>
+        <p>about</p>
+    </div>
+    <div class="indexHeroMessage">
+        <p style="width: 60%;">I’m an anti-disciplinary designer based in the SF Bay Area. I enjoy design, sometimes coding it, and spending time with my nephew.</p>
+        <SocialIcons />
+    </div>
+    <div class="casestudyContainer">
+        <p class="spacedText" style="color: #E0B49B;">CASE STUDY</p>
+        <div class="casestudyList">
+            <div id="brightlineItem" class="casestudyItem deselected">
+                <span class="casestudyName">Brightline</span>
+                <span class="casestudyDesc">Digital health tools for providers</span>
+                <span class="casestudyDate">2022</span>
+            </div>
+            <div id="microsoftItem" class="casestudyItem">
+                <span class="casestudyName">Microsoft</span>
+                <span class="casestudyDesc">Communication platform for B2B Sellers</span>
+                <span class="casestudyDate">2022</span>
+            </div>
+            <div id="handshakeItem" class="casestudyItem">
+                <span class="casestudyName">Handshake</span>
+                <span class="casestudyDesc">Skills platform for exploratory college students</span>
+                <span class="casestudyDate">2022</span>
+            </div>
+            <div id="youtubeItem" class="casestudyItem">
+                <span class="casestudyName">YouTube Shorts</span>
+                <span class="casestudyDesc">Dashboard for YouTube Shorts experience</span>
+                <span class="casestudyDate">2023</span>
+            </div>
+            <div id="spotifyItem" class="casestudyItem">
+                <span class="casestudyName">Spotify</span>
+                <span class="casestudyDesc">Spotify Jam UI redesign</span>
+                <span class="casestudyDate">2023</span>
+            </div>
+        </div>
+    </div>
