@@ -10,6 +10,7 @@ import reefuiGIF from '../assets/Brightline/GIF/Brightline UI Recording in Mocku
 import providercontentGIF from '../assets/Brightline/GIF/ProviderContent.gif'
 import parentandchild from '../assets/Brightline/PNG/Parent&YoungChild.png';
 import brightlinejourney from '../assets/Brightline/PNG/Ideal Brightline Journey.png';
+import personThinking from '../assets/Brightline/PNG/Person Thinking.png';
 /****************END OF IMAGE IMPORTS */
 ---
 
@@ -76,7 +77,7 @@ import brightlinejourney from '../assets/Brightline/PNG/Ideal Brightline Journey
 <section id="research" class="section-topmargin">
     <p>01// Understanding Brightline</p>
     <div class="twocolumn-grid">
-        <img class="fullSizeImage" src={parentandchild.src} width={parentandchild.width} height={parentandchild.height}>
+        <img class="fullSizeImage" src={parentandchild.src} width={parentandchild.width} height={parentandchild.height} />
         <div class="textinTwoColumn">
             <h4>Who are the coaches and therapists?</h4>
             <p>Brightline is built on meeting families in their day to day lives, and this ultimately relies on the product team empowering our providers to deliver care in a timely manner.
@@ -87,21 +88,21 @@ import brightlinejourney from '../assets/Brightline/PNG/Ideal Brightline Journey
     </div>
     <div id="flex24px" class="casestudy-container48">
         <h4>Ideal Brightline Journey</h4>
-        <img class="fullSizeImage" src={brightlinejourney.src} width={brightlinejourney.width} height={brightlinejourney.height}>
+        <img class="fullSizeImage" src={brightlinejourney.src} width={brightlinejourney.width} height={brightlinejourney.height} />
     </div>
 
-    <div class="inner-section-wpadding">
+    <div class="casestudy-container48">
         <p class="graySpacedSectionHeader">RESEARCH SUMMARY</p>
         <div class ="threeColumn">
-            <div>
+            <div class="columnedTextContainer">
                 <b>1/ Review Existing Research</b>
                 <p class="graySubText">I reviewed existing UXR studies and created my own based on recorded viewing parties.</p>
             </div>
-            <div>
+            <div class="columnedTextContainer">
                 <b>2/ Analyze Provider Survey</b>
                 <p class="graySubText">I synthesized the data from our quarterly survey into quantifiable metrics, guiding our product initiatives.</p>
             </div>
-            <div>
+            <div class="columnedTextContainer">
                 <b>3/ Conduct Mock Coaching</b>
                 <p class="graySubText">I conducted mock sessions with our coaches to step into a true Brightline care experience.</p>
             </div>
@@ -113,35 +114,35 @@ import brightlinejourney from '../assets/Brightline/PNG/Ideal Brightline Journey
         I reviewed our existing research study focused on the relationship that care builds between providers and caretakers<i> (Member’s Love Us).</i>
         I also created a collaborative study focusing on guided engagement for incoming product members.</p>
         
-    <section class="inner-section-wpadding">
-    <div id="whatsGoingWell">
+    <section id="whatsgoingwell" class="casestudy-container">
+    <div id="whatsGoingWell" class="whatsgoingwell-headerTextContainer">
         <h4>What's going well?</h4>
-        <section class="inner-section-wpadding">
+        <section>
         <div class ="twoColumn">
-            <div>
+            <div class="columnedTextContainer">
                 <b>1/ Member Love</b>
                 <p class="graySubText">Families are returning and enjoying their sessions when they and their provider are on the same page. This includes timely intake completion and full use of the allotted session time.</p>
             </div>
-            <div>
+            <div class="columnedTextContainer">
                 <b>2/ Provider Love</b>
                 <p class="graySubText">As our provider care tools are being updated, our care team is finding their clinical hours less overwhelming and stressful, especially as they are meeting them in their existing workflows.</p>
             </div>
         </div>
         </section>
     </div>
-    <div id="whatsNotGoingWell">
+    <div id="whatsNotGoingWell" class="whatsgoingwell-headerTextContainer">
         <h4>What's not going so well?</h4>
-        <section class="inner-section-wpadding">
+        <section>
         <div class ="threeColumn">
-            <div>
+            <div class="columnedTextContainer">
                 <b>1/ Too Many Tools</b>
                 <p class="graySubText">Content and paperwork enables care, but the process for finding and sharing it was too complex and relied on multiple members of our care team to share with a member and their family.</p>
             </div>
-            <div>
+            <div class="columnedTextContainer">
                 <b>2/ Hard to Find Content</b>
                 <p class="graySubText">Our Digital Exercises and handouts were scattered across 5 different platforms. Poor discovery created duplicative material and workflows along with undesirability to utilize Brightline content.</p>
             </div>
-            <div>
+            <div class="columnedTextContainer">
                 <b>3/ Scheduling & Reminders</b>
                 <p class="graySubText">Creating appointments and reminders is an overwhelming experience and reliant on our member support team, ultimately creating a forgetful and lacking experience.</p>
             </div>
@@ -154,28 +155,30 @@ import brightlinejourney from '../assets/Brightline/PNG/Ideal Brightline Journey
     <div style="max-width: 50%;">
         <p>Taking a deeper look at the metrics from our provider survey, we discovered that three key workflows were being hindered by the existing product experience.</p>
     </div>
-    <div class ="threeColumn">
-        <div>
-            <h1 style="margin-bottom: 0; color: #ED9216">1/2</h1>
-            <p>of exercises/handouts were being assigned</p>
-        </div>
-        <div>
-            <h1 style="margin-bottom: 0; color: #ED9216;">10-15</h1>
-            <p>avg clicks to discover & share content</p>
-        </div>
-        <div>
-            <h1 style="margin-bottom: 0; color: #ED9216">42%</h1>
-            <p>of providers reported digital exercises as significant pain point</p>
+    <div class="casestudy-container">
+        <div class ="threeColumn">
+            <div class="columnedTextContainer">
+                <h1 style="margin-bottom: 0; color: #E2D3C8">1/2</h1>
+                <p>of exercises/handouts were being assigned</p>
+            </div>
+            <div class="columnedTextContainer">
+                <h1 style="margin-bottom: 0; color: #E2D3C8;">10-15</h1>
+                <p>avg clicks to discover & share content</p>
+            </div>
+            <div class="columnedTextContainer">
+                <h1 style="margin-bottom: 0; color: #E2D3C8">42%</h1>
+                <p>of providers reported digital exercises as significant pain point</p>
+            </div>
         </div>
     </div>
-    <section class="inner-section-wpadding">
+    <section class="casestudy-container48">
         <div class="twoColumn">
-            <div class="testingSubContainer">
+            <div class="textinTwoColumn">
             <h4>What does this mean?</h4>
             <p>For our providers, this implied a true reliance for existing material, adding to a dissatisfying and longer workflow with potential for inconsistency and errors.</p>
             <p>For our business, this implied a negative impact for long-term member and caregiver engagement, but identified a clear product opportunity.</p>
             </div>
-            <img class ="twoColumnFullSizeImage" src="BrightlineIMG/Person Thinking.png">
+            <img class ="twoColumnFullSizeImage" src={personThinking.src} height={personThinking.height} width={personThinking.width} />
         </div>
     </section> 
     <div class="line"></div> 

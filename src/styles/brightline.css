@@ -10,6 +10,15 @@
     background-color: #E2D3C8;
     text-align: center;
 }
+
+h1{
+    font-size: 3rem;
+    color: #5B483E;
+    font-family: 'Inter Var';
+    font-weight: 700;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
 h2{
     font-size: 2.25rem;
     color: #5B483E;
@@ -202,6 +211,10 @@ margin-top: 2.25rem;
     margin-top: 3rem;
 }
 
+.line{
+    margin: 4rem 0;
+    border-top: 1px solid #D5D6D5;
+}
 /***********************
     Grid columns
 ***********************/
@@ -224,10 +237,42 @@ margin-top: 2.25rem;
     gap: 1.5rem;
 }
 
+.twoColumn{
+    display: grid;
+    grid-template-columns:repeat(2, auto);
+    gap: 1.5rem;
+}
+
 .inner-section-wpadding{
 
         margin-top:2rem;
     
+}
+
+.columnedTextContainer{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+
+
+
+/***********************
+
+    What's going well
+
+************************/
+#whatsgoingwell{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.whatsgoingwell-headerTextContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
 /*************************
