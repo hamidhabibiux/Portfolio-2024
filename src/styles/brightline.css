@@ -124,10 +124,10 @@ p.chipText{
 **********************************/
 
 .imagecontainer{
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
     background:#E2D3C8;
     border-radius: 10px;
 }
