@@ -11,6 +11,8 @@ import providercontentGIF from '../assets/Brightline/GIF/ProviderContent.gif'
 import parentandchild from '../assets/Brightline/PNG/Parent&YoungChild.png';
 import brightlinejourney from '../assets/Brightline/PNG/Ideal Brightline Journey.png';
 import personThinking from '../assets/Brightline/PNG/Person Thinking.png';
+import mxCXchart from '../assets/Brightline/PNG/MemberProvider Experience.png';
+import hamidandLeon from '../assets/Brightline/PNG/Mock Coaching.png';
 /****************END OF IMAGE IMPORTS */
 ---
 
@@ -186,14 +188,15 @@ import personThinking from '../assets/Brightline/PNG/Person Thinking.png';
     <div style="max-width: 50%;">
         <p>Due to patient privacy, the product team was not able to step into any sessions conducted with members in care. We could only go off of what we were hearing from both members and providers.</p>
     </div>
-    <img class="fullSizeImagewMargin" src="BrightlineIMG/Member:Provider Experience.png">
-    <h4>How did we empathize with the user?</h4>
+    <img class="fullSizeImagewMargin" src={mxCXchart.src} height={mxCXchart.height} width={mxCXchart.width} />  
         <div class="twoColumn">
-            <div class="testingSubContainer">
+            <div class="textinTwoColumn">
+            <h4>How did we empathize with the user?</h4>
             <p>We conducted our own mock coaching sessions where my design manager and I took turns role playing a child and parent entering their intake session with situations in mind to really understand how coaches respond to an unideal session.</p>
             <p class="graySubText">This co-design methodology enabled us to get immediate feedback, guide our decisions, and best design for our targeted user group.</p>
             </div>
-            <img class ="twoColumnFullSizeImage" src="BrightlineIMG/Mock Coaching.png">
+            <img class ="FullSizeImage" src={hamidandLeon.src} height={hamidandLeon.height} width={hamidandLeon.width}>
         </div>
     <div class="line"></div>
 </section>
+</div>
