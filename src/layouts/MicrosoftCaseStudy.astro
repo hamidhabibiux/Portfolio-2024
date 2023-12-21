@@ -5,8 +5,11 @@ import '../styles/microsoft.css';
 /**************Image Imports */
 import messagingGIF from '../assets/Microsoft/GIF/Final Messaging.gif';
 import prospectingGIF from '../assets/Microsoft/GIF/Final Prospecting.gif';
+import onboardingGIF from '../assets/Microsoft/GIF/Final Onboarding.gif';
 import flowChats from '../assets/Microsoft/PNG/FlowChats.png';
-
+import insideSeller from '../assets/Microsoft/PNG/Inside Seller.png';
+import fieldSeller from '../assets/Microsoft/PNG/Field Seller.png';
+import { fade } from "astro:transitions";
 /****************END OF IMAGE IMPORTS */
 ---
 
@@ -62,7 +65,29 @@ import flowChats from '../assets/Microsoft/PNG/FlowChats.png';
         <img class="fullSizeImage" src={flowChats.src} width={flowChats.width} height={flowChats.height} />
     </div>
 </div>
+<div id="flex24px" class="casestudy-container48">
+    <div class="eightpxFlex">
+        <h4>Efficient CRM Integration</h4>
+        <p>Our application streamlines seller onboarding by automating tedious tasks, minimizing mundane workflows. Additionally, sellers can seamlessly integrate their Primary CRM account with our platform, ensuring a cohesive and efficient workflow. This solution aims to elevate productivity by eliminating manual processes.</p>
+    </div>
+    <div class="imagecontainer">
+        <img class="testingMsImages" src={onboardingGIF.src} width={onboardingGIF.width} height={onboardingGIF.height} />
+    </div>
+</div>
+<section id="theProblem" class="casestudy-container128">
+    <b class="grayTextNotSpaced">01// Understanding B2B Sellers</b>
+    <div id="flex24px" class="casestudy-container48">
+        <div class="eightpxFlex">
+            <h4>A high percentage of seller's time is not actually devoted to selling.</h4>
+            <p>We focused on two types of sellers, the Inside Seller and the Field Seller. Most of our sellers' time was spent across a plethora of tools and communication systems, hindering the sales process.</p>
+        </div>
+        <div class="twoImageHolder">
+            <img src={insideSeller.src} width={insideSeller.width} height={insideSeller.height} />
+            <img src={fieldSeller.src} width={fieldSeller.width} height={fieldSeller.height} />
 
+        </div>
+    </div>
+</section>
 
 
 

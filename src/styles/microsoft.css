@@ -99,6 +99,9 @@ b{
     font-weight: 800;
 }
 
+.grayTextNotSpaced{
+    color: #939292;
+}
 
 
 /********CHIPS******/
@@ -191,6 +194,16 @@ p.chipText{
     max-width: auto;
     width: auto;
     height: 50vh;
+}
+
+.twoImageHolder{
+    text-align: center;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    justify-items: center;
+    gap: 2vw;
 }
 
 /***********************************
