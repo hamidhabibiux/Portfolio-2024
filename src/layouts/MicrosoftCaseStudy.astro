@@ -9,7 +9,9 @@ import onboardingGIF from '../assets/Microsoft/GIF/Final Onboarding.gif';
 import flowChats from '../assets/Microsoft/PNG/FlowChats.png';
 import insideSeller from '../assets/Microsoft/PNG/Inside Seller.png';
 import fieldSeller from '../assets/Microsoft/PNG/Field Seller.png';
-import { fade } from "astro:transitions";
+import interviewChart from '../assets/Microsoft/PNG/Interview Chart.png';
+import toolAudit from '../assets/Microsoft/PNG/Tool Audit.png';
+
 /****************END OF IMAGE IMPORTS */
 ---
 
@@ -84,9 +86,59 @@ import { fade } from "astro:transitions";
         <div class="twoImageHolder">
             <img src={insideSeller.src} width={insideSeller.width} height={insideSeller.height} />
             <img src={fieldSeller.src} width={fieldSeller.width} height={fieldSeller.height} />
-
         </div>
     </div>
+    <div class="casestudy-containerBIGSPACING">
+        <p class="graySpacedSectionHeader">RESEARCH SUMMARY</p>
+        <div class ="twoColumn">
+            <div class="columnedTextContainer">
+                <b>1/ Seller Interviews</b>
+                <p class="graySubText">We conducted interviews with 8 sellers across different industries to understand where we could help them.</p>
+            </div>
+            <div class="columnedTextContainer">
+                <b>2/ Existing Sales Tool Audit</b>
+                <p class="graySubText">We evaluated popular sales tools to gain insight into sellers’ routines and daily workspace.</p>
+            </div>
+        </div>
+    </div>
+    <div class="line"></div>
+    <p class="graySpacedSectionHeader">SELLER INTERVIEWS</p>
+    <p style="max-width: 40vw;">Interviews seemed like the best way to really understand why sellers were stuck in a wide array of tools rather than actually selling their products.</p>
+    <div class="casestudy-container">
+        <img class="fullSizeImage" src={interviewChart.src} width={interviewChart.width} height={interviewChart.height} />
+    </div>
+    <div class="casestudy-container48">
+        <div id="whatsNotGoingWell" class="whatsgoingwell-headerTextContainer">
+            <h4>What did we learn?</h4>
+            <section>
+            <div class ="threeColumn">
+                <div class="columnedTextContainer">
+                    <b>1/ Sellers don't like mindless work</b>
+                    <p class="graySubText">In the seller workflow, extensive data entry and manual client progression were repeatedly observed. Sellers felt like these tasks added no value to the work they were doing. </p>
+                </div>
+                <div class="columnedTextContainer">
+                    <b>2/ Sellers prioritize progression</b>
+                    <p class="graySubText">We repeatedly heard that sellers just want to move forward in their sale rather than needing constant upkeep. They wished their tools would “just do the upkeep for them” while helping them close a sale.</p>
+                </div>
+                <div class="columnedTextContainer">
+                    <b>3/ Current tools are unforgiving</b>
+                    <p class="graySubText">Current CRM’s aren’t allowing sellers to get to where they need quickly. They would prefer their tools guide them similar to the apps they use in their personal lives.</p>
+                </div>
+            </div>
+            </section>
+        </div>
+    </div>
+    <div class="line"></div>
+    <p class="graySpacedSectionHeader">EXSISTING SALES TOOL AUDIT</p>
+    <p>With little known about a seller’s workflow, we wanted to get a better idea of the tools they were spending time in. For us this meant breaking the space into the types of tools and trying to jump into a popular CRM, such as Salesforce.</p>
+    <div id="flex24px" class="casestudy-container48">
+        <h4>What are these tools?</h4>
+        <img class="fullSizeImage" src={toolAudit.src} width={toolAudit.width} height={toolAudit.height} />
+        <p>Given the timeline of our project, there were just too many tools that we would not be able to understand and consider. It was beneficial to know that many tools are built to work in line with the sellers CRM and that most software exist in overlapping spaces to meet many seller needs.</p>
+    </div>
+    <div class="line"></div>
+    <p class="graySpacedSectionHeader">THE CHALLENGE</p>
+    
 </section>
 
 
