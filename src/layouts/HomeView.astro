@@ -78,12 +78,21 @@ span {
     padding-block: 4px;
 }
 
+
+.casestudyItem:hover ~ .casestudyItem span{
+    color:#C0B5AF;
+}
+
 span.casestudyDate{
     text-align: right;
 }
 
 .deselected span{ /*use this for hover effect*/
     color:#C0B5AF;
+}
+
+a{
+    text-decoration: none;
 }
 
 /**********************************
@@ -109,6 +118,11 @@ span.casestudyDate{
 
 </style>
 
+<script>
+
+
+</script>
+
 
 <div class="indexContainer">
     <div class="theHeader">
@@ -122,7 +136,7 @@ span.casestudyDate{
     <div class="casestudyContainer">
         <p class="spacedText" style="color: #E0B49B;">CASE STUDY</p>
         <div class="casestudyList">
-            <a href="/brightline"><div id="brightlineItem" class="casestudyItem deselected">
+            <a href="/brightline"><div id="brightlineItem" class="casestudyItem">
                 <span class="casestudyName">Brightline</span>
                 <span class="casestudyDesc">Digital health tools for providers</span>
                 <span class="casestudyDate">2022</span>

@@ -13,6 +13,15 @@ import brightlinejourney from '../assets/Brightline/PNG/Ideal Brightline Journey
 import personThinking from '../assets/Brightline/PNG/Person Thinking.png';
 import mxCXchart from '../assets/Brightline/PNG/MemberProvider Experience.png';
 import hamidandLeon from '../assets/Brightline/PNG/Mock Coaching.png';
+import navigationGIF from '../assets/Brightline/GIF/Navigation.gif';
+import sidebarIteration from '../assets/Brightline/PNG/Sidebar Navigation.png';
+import tabIteration from '../assets/Brightline/PNG/Tab Exploration.png';
+import reefGreen from '../assets/Brightline/PNG/Reef Hero with Changes.png';
+import contentdiscoveryGreen from '../assets/Brightline/PNG/Content Discovery Hero with Changes.png';
+import assignpreviewGIF from '../assets/Brightline/GIF/Assign and Preview in Mockup.gif';
+import cardsGIF from '../assets/Brightline/GIF/Cards in Mockup.gif';
+import filtersGIF from '../assets/Brightline/GIF/Filters in Mockup.gif';
+
 /****************END OF IMAGE IMPORTS */
 ---
 
@@ -76,7 +85,7 @@ import hamidandLeon from '../assets/Brightline/PNG/Mock Coaching.png';
     </div>
 </div>
 
-<section id="research" class="section-topmargin">
+<section id="research" class="casestudy-container128">
     <p>01// Understanding Brightline</p>
     <div class="twocolumn-grid">
         <img class="fullSizeImage" src={parentandchild.src} width={parentandchild.width} height={parentandchild.height} />
@@ -93,7 +102,7 @@ import hamidandLeon from '../assets/Brightline/PNG/Mock Coaching.png';
         <img class="fullSizeImage" src={brightlinejourney.src} width={brightlinejourney.width} height={brightlinejourney.height} />
     </div>
 
-    <div class="casestudy-container48">
+    <div class="casestudy-containerBIGSPACING">
         <p class="graySpacedSectionHeader">RESEARCH SUMMARY</p>
         <div class ="threeColumn">
             <div class="columnedTextContainer">
@@ -199,15 +208,184 @@ import hamidandLeon from '../assets/Brightline/PNG/Mock Coaching.png';
         </div>
     <div class="line"></div>
 </section>
-<section id="reef" class="section-topmargin">
+<section id="reef" class="section-topmargin"> <!--consider using the casestudy-container128 here when u remove the line -->
     <p>02// Reef</p>
     <div id="flex24px" class="casestudy-container48">
         <div class="eightpxFlex">
-            <h4>Reef Management</h4>
+            <h3>Reef Management</h3>
             <p>Reef is the primary hub for our providers when preparing for appointments. With many of our providers expressing their frustration in their tools, we wanted to focus on making their primary hub more navigable in comparison to the original MVP Brightline was still utilizing.</p>
         </div>
         <div class="imagecontainer">
             <img class="fullSizeImage" src={reefuiGIF.src} width={reefuiGIF.width} height={reefuiGIF.height} />
+        </div>
+    </div>
+    <div id="flex24px" class="casestudy-container48">
+        <div class="eightpxFlex">
+            <h4>Revamped UI to align with design system</h4>
+            <p>Most of the main content lies in the middle section and is exactly where our providers expect to find the actions and information they need. We didn’t want to change the functionality, but instead clean up our MVP designs to fit our growing design system.</p>
+        </div>
+        <div class="imagecontainer">
+            <img class="fullSizeImage" src={reefuiGIF.src} width={reefuiGIF.width} height={reefuiGIF.height} />
+        </div>
+    </div>
+    <div id="flex24px" class="casestudy-container48">
+        <div class="eightpxFlex">
+            <h4>A More Forgiving Navigation</h4>
+            <p>Providers were tired of getting lost across all of their care cases, chats, and other administrative tasks. Our friendlier and forgiving navigation system aims to solve this issue. This comes in the form of a collapsible sidebar, member pills, section tabs, and breadcrumbs.</p>
+        </div>
+        <div class="imagecontainer">
+            <img class="fullSizeImage" src={navigationGIF.src} width={navigationGIF.width} height={navigationGIF.height} />
+        </div>
+    </div>
+    <div id="reefDesignDecisions" class="casestudy-containerBIGSPACING">
+        <p class="graySpacedSectionHeader">DESIGN DECISIONS</p>
+        <p style="max-width: 50%;">Based on our research, we kept 2 design principles at the forefront of our decision making.</p>
+        <div class="casestudy-container">
+            <div class="twoColumn">
+                <div class="columnedTextContainer">
+                    <b>1/ Preserve Existing Workflows</b>
+                    <p class="graySubText">Our providers disliked not knowing where they were within our internal tools. Therefore the big decisions we make shouldn’t disrupt the workflows that they are already used to. For us, clean didn’t necessarily mean change.</p>
+                </div>
+                <div class="columnedTextContainer">
+                    <b>2/ Efficient Access to Critical Information</b>
+                    <p class="graySubText">Our providers don’t want to spend more time that they need to within Reef. We tried to target this by reassuring and reminding them of where they are while simplifying their journey to their member’s information.</p>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <p class="graySpacedSectionHeader">OUR EXPLORATIONS</p>
+        <div id="flex24px">    
+            <h4>Highlighted Designs</h4>
+            <img class="fullSizeImage" src={reefGreen.src} height={reefGreen.height} width={reefGreen.width} />
+            <div class="paddedTextFull">
+                <div class="paddedTextRow">
+                    <div class="paddedText">
+                        <i class="material-icons" style="color:white;">check_circle</i>
+                        <p class="inPaddingText"><b>Collapsible sidebar</b> with focus on subpage navigability within care cases</p>
+                    </div>
+                    <div class="paddedText">
+                        <i class="material-icons" style="color:white;">check_circle</i>
+                        <p class="inPaddingText"><b>Breadcrumbs</b> added to reduce confusion within Reef while preserving existing workflows</p>
+                    </div>
+                </div>
+                <div class="paddedTextRow">
+                    <div class="paddedText">
+                        <i class="material-icons" style="color:white;">check_circle</i>
+                        <p class="inPaddingText"><b>Refreshed primary UI</b> to implement new changes from growing design system</p>
+                    </div>
+                    <div class="paddedText">
+                        <i class="material-icons" style="color:white;">check_circle</i>
+                        <p class="inPaddingText" style="color:white;"><b>Member Information</b> quickly gives providers information they need when assigning care tasks</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="flex24px" class="casestudy-container48">    
+            <h4>Sidebar Navigation</h4>
+            <img class="fullSizeImage" src={sidebarIteration.src} height={sidebarIteration.height} width={sidebarIteration.width} />
+            <p>Initially we underestimated the importance of the distinction and accessibility of the subpages within each section of our navbar. Through our daily usability sync with our PIG’s we learned that not only were these pages constantly being accessed, they carried similar, but necessary information, making distinction of where they are extremely important. Our final design used color as a guide within the submenu and allowed them to collapse the navigation.</p>
+        </div>
+        <div id="flex24px" class="casestudy-container48">    
+            <h4>Tab Exploration</h4>
+            <img class="fullSizeImage" src={tabIteration.src} height={tabIteration.height} width={tabIteration.width} />
+            <p>At first, we wanted to clean up the tabs and keep them consistent throughout Reef. However, we found that our second iteration of tabs were confusing especially with the higher-level tabs directly above them. Our providers stated that our final iteration made sense and that they knew exactly where on the page it would affect.</p>
+        </div>
+    </div>
+</section>
+<section id="contentDiscovery" class="casestudy-container128">
+    <p>03// Provider Content</p>
+    <div id="flex24px" class="casestudy-container48">
+        <div class="eightpxFlex">
+            <h3>Digital Content Discovery</h3>
+            <p>Digital Exercises and Handouts are key for keeping families motivated between sessions. The Content Discovery hub is essential to ensuring our brand and care quality grows consistently. For us, guiding our providers where we could in this discovery was key throughout this initiative.</p>
+        </div>
+        <div class="imagecontainer">
+            <img class="fullSizeImage" src={assignpreviewGIF.src} width={assignpreviewGIF.width} height={assignpreviewGIF.height} />
+        </div>
+    </div>
+    <div id="flex24px" class="casestudy-container48">
+        <div class="eightpxFlex">
+            <h4>Filters for your needs</h4>
+            <p>Care ranges and with each provider creating a new care plan for each member, we needed to design the search experience to be intuitive and easily digestible. Our filter system aims to guide their discovery and finding by focusing on age, care topics, and by offering suggestions.</p>
+        </div>
+        <div class="imagecontainer">
+            <img class="fullSizeImage" src={filtersGIF.src} width={filtersGIF.width} height={filtersGIF.height} />
+        </div>
+    </div>
+    <div id="flex24px" class="casestudy-container48">
+        <div class="eightpxFlex">
+            <h4>Informative Cards</h4>
+            <p>As many of these exercises were unknown to our providers, the information that they might be sharing with families needed to be easily scanned and digestible. Our cards came in different places, but focused on keeping the primary information while offering quick actions.</p>
+        </div>
+        <div class="imagecontainer">
+            <img class="fullSizeImage" src={cardsGIF.src} width={cardsGIF.width} height={cardsGIF.height} />
+        </div>
+    </div>
+    <div id="flex24px" class="casestudy-container48">
+        <div class="eightpxFlex">
+            <h4>Preview & Assign Content</h4>
+            <p>Our providers expressed their need to try out the exercises they were giving to members in care prior to sending them out. The preview & assign functionality would allow them to take a quick glance at the exercise and directly assign it.</p>
+        </div>
+        <div class="imagecontainer">
+            <img class="fullSizeImage" src={assignpreviewGIF.src} width={assignpreviewGIF.width} height={assignpreviewGIF.height} />
+        </div>
+    </div>
+    <div id="reefDesignDecisions" class="casestudy-containerBIGSPACING">
+        <p class="graySpacedSectionHeader">DESIGN DECISIONS</p>
+        <p style="max-width: 50%;">Once again, as we designed and met with our providers, we kept 3 design principles in mind.</p>
+        <div class="casestudy-container">
+            <div class="threeColumn">
+                <div class="columnedTextContainer">
+                    <b>1/ Surface Context Specific Material</b>
+                    <p class="graySubText">The product we were aiming to highlight in this project was something that many of our providers have been barely utilizing. We needed to help guide and enable real time decision making where we could.</p>
+                </div>
+                <div class="columnedTextContainer">
+                    <b>2/ Minimize Number of Tools</b>
+                    <p class="graySubText">Our providers don’t want to spend more time that they need to within Reef. We tried to target this by reassuring and reminding them of where they are while simplifying their journey to their member’s information.</p>
+                </div>
+                <div class="columnedTextContainer">
+                    <b>3/ Meet Providers in their Workflow</b>
+                    <p class="graySubText">Many of our providers expressed differing workflows when delivering care. In consideration of this, we provided assignment within Reef and provided.</p>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <p class="graySpacedSectionHeader">OUR EXPLORATIONS</p>
+        <div id="flex24px">    
+            <h4>Highlighted Designs</h4>
+            <img class="fullSizeImage" src={reefGreen.src} height={reefGreen.height} width={reefGreen.width} />
+            <div class="paddedTextFull">
+                <div class="paddedTextRow">
+                    <div class="paddedText">
+                        <i class="material-icons" style="color:white;">check_circle</i>
+                        <p class="inPaddingText"><b>Collapsible sidebar</b> with focus on subpage navigability within care cases</p>
+                    </div>
+                    <div class="paddedText">
+                        <i class="material-icons" style="color:white;">check_circle</i>
+                        <p class="inPaddingText"><b>Breadcrumbs</b> added to reduce confusion within Reef while preserving existing workflows</p>
+                    </div>
+                </div>
+                <div class="paddedTextRow">
+                    <div class="paddedText">
+                        <i class="material-icons" style="color:white;">check_circle</i>
+                        <p class="inPaddingText"><b>Refreshed primary UI</b> to implement new changes from growing design system</p>
+                    </div>
+                    <div class="paddedText">
+                        <i class="material-icons" style="color:white;">check_circle</i>
+                        <p class="inPaddingText" style="color:white;"><b>Member Information</b> quickly gives providers information they need when assigning care tasks</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="flex24px" class="casestudy-container48">    
+            <h4>Sidebar Navigation</h4>
+            <img class="fullSizeImage" src={sidebarIteration.src} height={sidebarIteration.height} width={sidebarIteration.width} />
+            <p>Initially we underestimated the importance of the distinction and accessibility of the subpages within each section of our navbar. Through our daily usability sync with our PIG’s we learned that not only were these pages constantly being accessed, they carried similar, but necessary information, making distinction of where they are extremely important. Our final design used color as a guide within the submenu and allowed them to collapse the navigation.</p>
+        </div>
+        <div id="flex24px" class="casestudy-container48">    
+            <h4>Tab Exploration</h4>
+            <img class="fullSizeImage" src={tabIteration.src} height={tabIteration.height} width={tabIteration.width} />
+            <p>At first, we wanted to clean up the tabs and keep them consistent throughout Reef. However, we found that our second iteration of tabs were confusing especially with the higher-level tabs directly above them. Our providers stated that our final iteration made sense and that they knew exactly where on the page it would affect.</p>
         </div>
     </div>
 </section>
