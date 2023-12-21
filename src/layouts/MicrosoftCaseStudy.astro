@@ -1,0 +1,71 @@
+---
+import { Image } from "astro:assets";
+
+import '../styles/microsoft.css';
+/**************Image Imports */
+import messagingGIF from '../assets/Microsoft/GIF/Final Messaging.gif';
+import prospectingGIF from '../assets/Microsoft/GIF/Final Prospecting.gif';
+import flowChats from '../assets/Microsoft/PNG/FlowChats.png';
+
+/****************END OF IMAGE IMPORTS */
+---
+
+<div class="hero-image"> 
+    <img class="testingMsImages" src={messagingGIF.src} width={messagingGIF.width} height={messagingGIF.height} />
+    <img class="testingMsImages" src={prospectingGIF.src} width={prospectingGIF.width} height={messagingGIF.height} >
+</div>
+<div class="casestudy-contentpadding">
+<div class="casestudy-hero">
+    <h2>Micrsoft SalesCatcher</h2>
+    <h4 style="color: #B8B8B8;">An all-in-one solution for B2B sellers to connect and close sales</h4>
+    <div class="casestudy-chiprow">
+        <div id="dateChip" class="casestudy-chip">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16" fill="none">
+                <path d="M12.6667 12.668H3.33333V5.33464H12.6667M10.6667 0.667969V2.0013H5.33333V0.667969H4V2.0013H3.33333C2.59333 2.0013 2 2.59464 2 3.33464V12.668C2 13.0216 2.14048 13.3607 2.39052 13.6108C2.64057 13.8608 2.97971 14.0013 3.33333 14.0013H12.6667C13.0203 14.0013 13.3594 13.8608 13.6095 13.6108C13.8595 13.3607 14 13.0216 14 12.668V3.33464C14 2.98101 13.8595 2.64187 13.6095 2.39183C13.3594 2.14178 13.0203 2.0013 12.6667 2.0013H12V0.667969M11.3333 8.0013H8V11.3346H11.3333V8.0013Z" fill="#515155"/>
+            </svg>
+            <p class="chipText">Feb - May 2022</p>
+        </div>
+        <div class="casestudy-chip">
+            <p class="chipText">UX Design</p>
+        </div>
+        <div class="casestudy-chip">
+            <p class="chipText">UX Research</p>
+        </div>
+        <div class="casestudy-chip">
+            <p class="chipText">4 Design</p>
+        </div>
+        <div class="casestudy-chip">
+            <p class="chipText">1 Design Mentor</p>
+        </div>
+    </div>
+    <p>In Spring 2022, Microsoft approached Berkeley Innovation with a collaborative project in mind, aimed at improving tools for B2B sellers. 
+        <br /><br />
+        Recognizing the inefficiencies in the seller's workflow, my team and I conducted interviews and workshops to gain insights. We subsequently designed a mobile platform that streamlines seller tasks, enabling them to connect with potential buyers and automate manual processes. This project ultimately garnered enthusiastic feedback from Microsoft's Digital Transformation Studio and continues to progress toward a future release.</p>
+</div>
+<div id="flex24px" class="casestudy-containerBIGSPACING">
+    <p class="graySpacedSectionHeader">KEY EXPERIENCES</p>
+
+    <div class="eightpxFlex">
+        <h4>Enhanced Seller-Client Matchmaking</h4>
+        <p>The existing seller experience involves a complex process of researching and funneling clients before connecting them to a seller. Our solution aims to streamline this process by offering sellers access to potential clients, comprehensive information, and AI-driven recommendations that highlight the suitability of the buyer.</p>
+    </div>
+    <div class="imagecontainer">
+        <img class="testingMsImages" src={prospectingGIF.src} width={prospectingGIF.width} height={prospectingGIF.height} />
+    </div>
+</div>
+<div id="flex24px" class="casestudy-container48">
+    <div class="eightpxFlex">
+        <h4>Buyer-Seller Engagement Plugin</h4>
+        <p>A Microsoft Teams plugin empowering buyers to opt in for seller outreach while providing a platform for sellers to connect. Our objective is to offer buyers the chance to engage while maintaining control over unsolicited contact. This plugin facilitates curated interactions, putting the buyer in the driver's seat of the communication process.</p>
+    </div>
+    <div class="imagecontainer">
+        <img class="fullSizeImage" src={flowChats.src} width={flowChats.width} height={flowChats.height} />
+    </div>
+</div>
+
+
+
+
+
+
+</div>
