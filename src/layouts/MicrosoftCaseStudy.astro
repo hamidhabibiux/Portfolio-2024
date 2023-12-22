@@ -11,7 +11,12 @@ import insideSeller from '../assets/Microsoft/PNG/Inside Seller.png';
 import fieldSeller from '../assets/Microsoft/PNG/Field Seller.png';
 import interviewChart from '../assets/Microsoft/PNG/Interview Chart.png';
 import toolAudit from '../assets/Microsoft/PNG/Tool Audit.png';
-
+import manageclientsGIF from '../assets/Microsoft/GIF/Final Manage Clients.gif';
+import prospectingIteration from '../assets/Microsoft/PNG/Prospecting Iterations.png';
+import messagingIteration from '../assets/Microsoft/PNG/Messaging Iteration.png';
+import outreachIteration from '../assets/Microsoft/PNG/Outreach Iteration.png';
+import reflectionMockup from '../assets/Microsoft/PNG/Microsoft Team mockup.png';
+import reflectionScreenshot from '../assets/Microsoft/PNG/Reflection Screenshot.png';
 /****************END OF IMAGE IMPORTS */
 ---
 
@@ -21,7 +26,7 @@ import toolAudit from '../assets/Microsoft/PNG/Tool Audit.png';
 </div>
 <div class="casestudy-contentpadding">
 <div class="casestudy-hero">
-    <h2>Micrsoft SalesCatcher</h2>
+    <h2>Micrsoft Salescatcher</h2>
     <h4 style="color: #B8B8B8;">An all-in-one solution for B2B sellers to connect and close sales</h4>
     <div class="casestudy-chiprow">
         <div id="dateChip" class="casestudy-chip">
@@ -47,7 +52,7 @@ import toolAudit from '../assets/Microsoft/PNG/Tool Audit.png';
         <br /><br />
         Recognizing the inefficiencies in the seller's workflow, my team and I conducted interviews and workshops to gain insights. We subsequently designed a mobile platform that streamlines seller tasks, enabling them to connect with potential buyers and automate manual processes. This project ultimately garnered enthusiastic feedback from Microsoft's Digital Transformation Studio and continues to progress toward a future release.</p>
 </div>
-<div id="flex24px" class="casestudy-containerBIGSPACING">
+<div id="flex24px" class="casestudy-container64">
     <p class="graySpacedSectionHeader">KEY EXPERIENCES</p>
 
     <div class="eightpxFlex">
@@ -138,11 +143,82 @@ import toolAudit from '../assets/Microsoft/PNG/Tool Audit.png';
     </div>
     <div class="line"></div>
     <p class="graySpacedSectionHeader">THE CHALLENGE</p>
-    
+    <p style="text-align: center;">Can we create a tool that integrates into diverse seller routines focused on minimizing the mundane tasks that they face in their day to day while harmonizing seamlessly with their CRM platform.</p>
+
 </section>
 
+<section id="salescatcher" class="casestudy-container128">
+    <b class="grayTextNotSpaced">02// Salescatcher</b>
+    <div id="flex24px" class="casestudy-container48">
+        <div class="eightpxFlex">
+            <h4>A new outreach channel</h4>
+            <p>Salescatcher is an all-in-one solution intended to help sellers reach clients, build their potential relationships, and progress through a sale, all while syncing their progress and client information with their respective CRM.</p>
+        </div>
+        <div class="imagecontainer">
+            <img class="testingMsImages" src={messagingGIF.src} width={messagingGIF.width} height={messagingGIF.height} />
+        </div>
+    </div>
+    <div id="flex24px" class="casestudy-container48">
+        <div class="eightpxFlex">
+            <h4>Potential clients found for you</h4>
+            <p>Potential buyers that fit the seller’s target demographic are found for them so they can decide who they want to reach out to and bring into the funnel. We wanted to give sellers the information that they need to make quick decisions, with AI justifying why the buyer was recommended.</p>
+        </div>
+        <div class="imagecontainer">
+            <img class="testingMsImages" src={prospectingGIF.src} width={prospectingGIF.width} height={prospectingGIF.height} />
+        </div>
+    </div>
+    <div id="flex24px" class="casestudy-container48">
+        <div class="eightpxFlex">
+            <h4>Manage and organize your buyers</h4>
+            <p>Sellers need to decide which leads to chase with the least amount of friction possible. We built our buyer profile and messaging pages so sellers could quickly view their selected leads and approach them with the information they need.
+                <br /><br />
+                This comes in the form of buyer profile’s, analytics, and organization tools.</p>
+        </div>
+        <div class="imagecontainer">
+            <img class="testingMsImages" src={manageclientsGIF.src} width={manageclientsGIF.width} height={manageclientsGIF.height} />
+        </div>
+    </div>
+    <div id="flex24px" class="casestudy-container48">
+        <div class="eightpxFlex">
+            <h4>The companion for buyers</h4>
+            <p>We recognize that most people do not want to be solicited, but with businesses running on supply and demand, our Teams app, Flow, allows organizations that are interested in being reached to opt in. This app in turn completes our bi-directional communication channel by giving buyers the ability to be reached without forcing solicitation in the Microsoft workspace.</p>
+        </div>
+        <div class="imagecontainer">
+            <img class="fullSizeImage" src={flowChats.src} width={flowChats.width} height={flowChats.height} />
+        </div>
+    </div>
+</section>
+<section id="salescatcherExplorations" class="casestudy-container128">
+    <p class="graySpacedSectionHeader">SALESCATCHER EXPLORATIONS</p>
+    <div id="flex24px">
+        <h4>Prospecting Flow</h4>
+        <img class="fullSizeImage" src={prospectingIteration.src} width={prospectingIteration.width} height={prospectingIteration.height} />
+        <p>Originally aiming to match the interactions existant in personal apps, we initially turned towards dating apps. This had many problems and we knew we needed to prioritize them being able to manage their ongoing prospects as well as being able to choose from more than just one buyer.</p>
+    </div>
+    <div id="flex24px" class="casestudy-container48">
+        <h4>Contacts Exploration</h4>
+        <img style="max-width: 60%; margin: auto;"class="fullSizeImage" src={messagingIteration.src} width={messagingIteration.width} height={messagingIteration.height} />
+        <p>Early in our designs, we wanted to prioritize helping the seller close a sale. Because of this, we tried to show their contacts with a focus on their sale progress. Upon further exploration, we found that to not be helpful. Our final iteration focused on them being able to recognize their clients, view the status of their sale through their last message, and properly organize their buyers.</p>
+    </div>
+    <div id="flex24px" class="casestudy-container48">
+        <h4>Outreach Exploration</h4>
+        <img class="fullSizeImage" src={outreachIteration.src} width={outreachIteration.width} height={outreachIteration.height} />
+        <p>A seller on the go is looking to have all of the information they need where they need it. This meant knowing their client in order to make decisions and being able to progress the sale. Ultimately, we separated the buyer’s information into separate pages to reduce confusion while incorporating the Microsoft applications they needed to set up future calls with their buyer.</p>
+    </div>
+</section>
 
-
-
-
+<section id="Reflection" class="casestudy-container128">
+    <b class="grayTextNotSpaced">03// Reflection</b>
+    <div class="casestudy-container48">
+    <div class="twoColumn">
+        <div class="columnedText" style="display: grid; align-content: space-between;">
+            <p>This was my first contracted project, and definitely an unforgettable one. The team at Microsoft constantly pushed us to think differently and explore creative solutions to a relatively stagnant process. With this, I am super proud of the solution our team outputted.
+                <br /><br />
+                Thank you to Deb, Florin, Josh, Karen, Liz O, Liz K, Jonah, and everyone else who was involved throughout this project.</p>
+            <img class="fullScreenImage" src={reflectionScreenshot.src} width={reflectionScreenshot.width} height={reflectionScreenshot.height} />
+        </div>
+        <img class="fullScreenImage" style="width: 80%" src={reflectionMockup.src} width={reflectionMockup.width} height={reflectionMockup.height} />
+    </div>
+    </div>
+</section>
 </div>

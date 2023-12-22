@@ -7,7 +7,7 @@
 }
 .hero-image{
     padding: 3vh;
-    background-color: #CAD7E2;
+    background-color: #90CAFF; /*#CAD7E2;*/
     text-align: center;
     display: grid;
     align-items: center;
@@ -147,7 +147,7 @@ p.chipText{
     padding-bottom: 2vw;
     padding-left: 4vw;
     padding-right: 4vw;
-    background:#CAD7E2;
+    background:#90CAFF; /*#CAD7E2*/
     border-radius: 10px;
     width: -webkit-fill-available;
     text-align: center;
@@ -217,7 +217,9 @@ margin-top: 2.25rem;
 .casestudy-container48{
     margin-top: 3rem;
 }
-
+.casestudy-container64{
+    margin-top: 4rem;
+}
 .casestudy-containerBIGSPACING{
     margin-top: 6rem;
 }
