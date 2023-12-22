@@ -119,6 +119,39 @@ a{
 </style>
 
 <script>
+// Get all casestudyItem elements
+const casestudyItems = document.querySelectorAll('.casestudyItem');
+
+// Loop through each casestudyItem
+casestudyItems.forEach(item => {
+  // Add event listener for mouseover (hover)
+  item.addEventListener('mouseover', () => {
+    // Loop through all items again and change text color of spans except the one being hovered
+    casestudyItems.forEach(otherItem => {
+      if (otherItem !== item && otherItem instanceof HTMLElement) {
+        const spans = otherItem.querySelectorAll('span');
+        spans.forEach(span => {
+          span.style.color = '#C0B5AF'; // Change this to your desired text color
+          // Change any other styles as needed
+        });
+      }
+    });
+  });
+
+  // Add event listener for mouseout (when the mouse leaves the element)
+  item.addEventListener('mouseout', () => {
+    // Loop through all items again and reset text color of spans back to its original state when not hovered
+    casestudyItems.forEach(otherItem => {
+      if (otherItem !== item && otherItem instanceof HTMLElement) {
+        const spans = otherItem.querySelectorAll('span');
+        spans.forEach(span => {
+          span.style.color = ''; // Reset to default or remove this line if not needed
+          // Reset any other styles as needed
+        });
+      }
+    });
+  });
+});
 
 
 </script>
