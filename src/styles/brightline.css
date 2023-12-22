@@ -7,7 +7,7 @@
 }
 .hero-image{
     padding: 3vh;
-    background-color: #E2D3C8;
+    background-color: #FFC890;/*#E2D3C8;*/
     text-align: center;
 }
 
@@ -139,7 +139,7 @@ p.chipText{
     padding-bottom: 2vw;
     padding-left: 4vw;
     padding-right: 4vw;
-    background:#E2D3C8;
+    background:#FFC890;/*#E2D3C8;*/
     border-radius: 10px;
 }
 
@@ -161,7 +161,7 @@ p.chipText{
 .fullSizePrototype{
     max-width: 100%;
     height:auto;
-    background: #E2D3C8;
+    background: #FFC890;/*#E2D3C8;*/
     border-radius: 10px;
 }
 
