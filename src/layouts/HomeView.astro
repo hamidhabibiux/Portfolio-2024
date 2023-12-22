@@ -80,10 +80,10 @@ span {
 }
 
 
-.casestudyItem:hover ~ .casestudyItem span{
+/*.casestudyItem:hover ~ .casestudyItem span{
     color:#C0B5AF;
 }
-
+*/
 span.casestudyDate{
     text-align: right;
 }
@@ -120,6 +120,7 @@ a{
 </style>
 
 <script>
+document.addEventListener('astro:page-load', () => {   
 // Get all casestudyItem elements
 const casestudyItems = document.querySelectorAll('.casestudyItem');
 
@@ -153,14 +154,14 @@ casestudyItems.forEach(item => {
     });
   });
 });
-
+});
 
 </script>
 
 
 <div class="indexContainer">
     <div class="theHeader">
-        <h1>Hamid Habibi</h1>
+        <a href="/"><h1>Hamid Habibi</h1></a>
         <p>about</p>
     </div>
     <div class="indexHeroMessage">
