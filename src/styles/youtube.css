@@ -9,7 +9,6 @@
     padding: 3vh;
     background-color: #FF8F8F;
     text-align: center;
-    display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
