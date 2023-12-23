@@ -27,7 +27,7 @@ h2{
     font-size: 2.25rem;
     color: #5B483E;
     font-family: 'Inter Var';
-    font-weight: 580;
+    font-weight: 700; /*originaly 580 */
     margin-block-start: 0px;
     margin-block-end: 0px;
 }
@@ -391,7 +391,21 @@ Padded text
 **************************/
 @media screen and (max-width:430px){ /*Sets mobile margin to 16px */
 
-.casestudy-contentpadding{
-    padding:1vh;
-}
-}
+    .casestudy-contentpadding{
+        padding:1vh;
+    }
+    }
+    
+    @media screen and (max-width: 500px){
+        .threeColumn{
+            grid-template-columns: none;
+            grid-template-rows: 1fr;
+        }
+        .twoColumn{
+            grid-template-columns: none;
+            grid-template-rows: 1fr;
+        }
+        .halfWidthText{
+            max-width: 100%;
+        }
+    }
