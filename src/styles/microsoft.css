@@ -101,6 +101,7 @@ b{
 
 .grayTextNotSpaced{
     color: #939292;
+    letter-spacing: .05rem;
 }
 
 /******************* 
