@@ -52,6 +52,7 @@ span {
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
+    width: 100%;
 }
 .indexHeroMessage {
     display: flex;
@@ -62,6 +63,7 @@ span {
 .casestudyList{
     display: flex;
     flex-direction: column;
+    width: 100%;
     
 }
 
@@ -74,8 +76,8 @@ span {
 
 .casestudyItem{
     display: grid;
-    grid-template-columns: 2.5fr 5.5fr 2fr;
-    gap: 10px;
+    grid-template-columns: 2.5fr 6.5fr 1fr;
+    gap: 16px;
     padding-block: 4px;
 }
 
@@ -100,6 +102,9 @@ a{
 #sidebarHeroMessage{
     width: 75%;
 }
+span.casestudyDesc-mobile{
+    display:none;
+}
 
 /**********************************
 
@@ -107,15 +112,52 @@ a{
 
 **********************************/
 
+
+
+@media screen and (max-width: 1250px){
+    span.casestudyDesc-mobile{
+        display:block;
+    }
+    span.casestudyDesc{
+        display: none;
+    }
+    #sidebarHeroMessage{
+    width: 100%;
+    }
+}
+
+@media screen and (max-width: 1301px){
+   span.casestudyDesc-mobile{
+        display:block;
+    }
+    span.casestudyDesc{
+        display: none;
+    }
+    
+
+    .casestudyItem{
+    display: grid;
+    grid-template-columns: 2.5fr 6.5fr 1.5fr;
+    gap: 24px;
+    padding-block: 4px;
+}
+
+}
 @media screen and (max-width: 1100px){
     span.casestudyDate{
         display: none;
     }
 
+    span.casestudyDesc-mobile{
+        display:block;
+    }
+    span.casestudyDesc{
+        display: none;
+    }
     .casestudyItem{
         display: grid;
         grid-template-columns: 2.5fr 7fr;
-        gap: 10px;
+        gap: 16px;
         padding-block: 4px;
     }
     #sidebarHeroMessage{
@@ -181,28 +223,30 @@ casestudyItems.forEach(item => {
         <div class="casestudyList">
             <a href="/brightline"><div id="brightlineItem" class="casestudyItem">
                 <span class="casestudyName">Brightline</span>
-                <span class="casestudyDesc">Digital health tools for providers</span>
+                <span class="casestudyDesc">Digital health tools for providers</span><span class="casestudyDesc-mobile">Digital health tools</span>
                 <span class="casestudyDate">2022</span>
             </div></a>
             <a href="/microsoft"><div id="microsoftItem" class="casestudyItem">
                 <span class="casestudyName">Microsoft</span>
-                <span class="casestudyDesc">Communication platform for B2B Sellers</span>
+                <span class="casestudyDesc">Communication platform for B2B Sellers</span><span class="casestudyDesc-mobile">B2B Seller Tools</span>
                 <span class="casestudyDate">2022</span>
             </div></a>
             <div id="handshakeItem" class="casestudyItem">
                 <span class="casestudyName">Handshake</span>
-                <span class="casestudyDesc">Skills platform for exploratory college students</span>
+                <span class="casestudyDesc">Skills platform for exploratory college students</span><span class="casestudyDesc-mobile">Online Skills Platform</span>
                 <span class="casestudyDate">2022</span>
             </div>
             <a href="/youtube"><div id="youtubeItem" class="casestudyItem">
                 <span class="casestudyName">YouTube Shorts</span>
-                <span class="casestudyDesc">Dashboard for YouTube Shorts experience</span>
+                <span class="casestudyDesc">Dashboard for YouTube Shorts experience</span><span class="casestudyDesc-mobile">Dashboard for YouTube Shorts</span>
                 <span class="casestudyDate">2023</span>
             </div></a>
             <div id="spotifyItem" class="casestudyItem">
                 <span class="casestudyName">Spotify</span>
-                <span class="casestudyDesc">Spotify Jam UI redesign</span>
+                <span class="casestudyDesc">Spotify Jam UI redesign</span><span class="casestudyDesc-mobile">Spotify Jam UI</span>
                 <span class="casestudyDate">2023</span>
             </div>
         </div>
+    </div>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4505Qyq9QqasHylZLLXpmK?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     </div>
