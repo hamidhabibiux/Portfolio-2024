@@ -409,3 +409,14 @@ Padded text
             max-width: 100%;
         }
     }
+
+    @media screen and (min-width:877px) and (max-width:1039px){
+        .threeColumn{
+            grid-template-columns: none;
+            grid-template-rows: 1fr;
+        }
+        .twoColumn{
+            grid-template-columns: none;
+            grid-template-rows: 1fr;
+        }
+    }
