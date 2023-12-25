@@ -1,5 +1,5 @@
 ---
-import rockimage from '../assets/homeimages/image 83.png';
+import rockimage from '../assets/homeimages/Assign and Preview in Mockup.gif';
 import redimage from '../assets/homeimages/image 81.png';
 import akira from '../assets/homeimages/image 80.png';
 import blueimage from '../assets/homeimages/image 79.png';
@@ -32,6 +32,14 @@ import kayimage from '../assets/homeimages/image 78.png';
     display: flex;
     flex-direction: column;
     gap: 16px;
+}
+
+
+.fullSizeImage{
+    max-width: 100%;
+    width: 100%;
+    height:auto;
+    border-radius: 8px;
 }
 
 
@@ -81,34 +89,38 @@ background-color: #D8DEE4;
 .imgLookAtMe{
     display: block;
 }
+
+a{
+    text-decoration: none;
+}
 </style>
 
 <div class="full-container">
 <div class="twoColumnContainer">
     <div class="colorSquresColumn">
-        <div id="brightlineSquare-container" class="colorSquare-container">
+        <a href="/brightline"><div id="brightlineSquare-container" class="colorSquare-container">
             <p>Brightline</p>
             <div id="brightlineSquare" class="colorSquare"></div>
-        </div>
-        <div id="MicrsoftSquare-container" class="colorSquare-container">
+        </div></a>
+        <a href="/microsoft"><div id="MicrsoftSquare-container" class="colorSquare-container">
             <p>Microsoft</p>
             <div id="msSquare" class="colorSquare"></div>
-        </div>
+        </div></a>
         <div id="HandshakeSquare-container" class="colorSquare-container">
             <p>Handshake</p>
             <div id="HandshakeSquare" class="colorSquare"></div>
         </div>
-        <div id="YTShortsSquare-container" class="colorSquare-container">
+        <a href="/youtube"><div id="YTShortsSquare-container" class="colorSquare-container">
             <p>YouTube Shorts</p>
             <div id="ytSquare" class="colorSquare"></div>
-        </div>
+        </div></a>
         <div id="spotifySquare-container" class="colorSquare-container">
             <p>Spotify</p>
             <div id="spotifySquare" class="colorSquare"></div>
         </div>
     </div>
     <div class="bigImageContainer">
-        <img class= 'containerImg' src={rockimage.src} width={rockimage.width} height={rockimage.height}>
+        <img class= 'containerImg fullSizeImage' src={rockimage.src} width={rockimage.width} height={rockimage.height}>
         <img class= 'containerImg' src={redimage.src} width={redimage.width} height={redimage.height}>
         <img class= 'containerImg' src={akira.src} width={akira.width} height={akira.height}>
         <img class= 'containerImg' src={blueimage.src} width={blueimage.width} height={blueimage.height}>
