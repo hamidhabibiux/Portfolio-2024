@@ -1,0 +1,68 @@
+---
+import rockimage from '../assets/homeimages/image 83.png';
+import redimage from '../assets/homeimages/image 81.png';
+import akira from '../assets/homeimages/image 80.png';
+import blueimage from '../assets/homeimages/image 79.png';
+import kayimage from '../assets/homeimages/image 78.png';
+
+
+---
+
+<style>
+
+.full-container{
+    padding: 3vh;
+}
+
+.colorSquare-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.twoColumnContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.colorSquare{
+width: 80px;
+height: 80px;
+background-color: black;
+}
+
+.bigImageContainer img{
+    display: none;
+}
+
+</style>
+
+<div class="full-container">
+<div class="twoColumnContainer">
+    <div class="colorSquresColumn">
+        <div id="brightlineSquare-container" class="colorSquare-container">
+            <p>Brightline</p>
+            <div id="brightlineSquare" class="colorSquare"></div>
+        </div>
+        <div id="MicrsoftSquare-container" class="colorSquare-container">
+            <p>Brightline</p>
+            <div id="msSquare" class="colorSquare"></div>
+        </div>
+        <div id="HandshakeSquare-container" class="colorSquare-container">
+            <p>Brightline</p>
+            <div id="HandshakeSquare" class="colorSquare"></div>
+        </div>
+        <div id="spotifySquare-container" class="colorSquare-container">
+            <p>Brightline</p>
+            <div id="spotifySquare" class="colorSquare"></div>
+        </div>
+    </div>
+    <div class="bigImageContainer">
+        <img src={rockimage.src} width={rockimage.width} height={rockimage.height}>
+        <img src={redimage.src} width={redimage.width} height={redimage.height}>
+        <img src={akira.src} width={akira.width} height={akira.height}>
+        <img src={blueimage.src} width={blueimage.width} height={blueimage.height}>
+        <img src={kayimage.src} width={kayimage.width} height={kayimage.height}>
+
+    </div>
+</div>
+</div>

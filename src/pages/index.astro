@@ -1,8 +1,10 @@
 ---
 import { ViewTransitions } from 'astro:transitions';
 import SideBar from '../layouts/HomeView.astro';
+import RightSide from '../layouts/homeRightSide.astro';
 
 import '../styles/global.css'
+import '../styles/indexpageview.css';
 ---
 
 <html lang="en">
@@ -19,11 +21,20 @@ import '../styles/global.css'
 			.sidebar-container{
 				padding: 3vh;
 			}
+
+			.right-container{
+				background-color: #fff;
+			}
 		</style>
 	</head>
 	<body>
-		<div class="sidebar-container">
-			<SideBar />
+		<div class="full-container">
+			<div class="sidebar-container">
+				<SideBar />
+			</div>
+			<div class="right-container">
+				<RightSide />
+			</div>
 		</div>
 	</body>
 </html>
