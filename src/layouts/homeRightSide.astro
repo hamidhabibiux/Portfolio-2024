@@ -17,16 +17,28 @@ import kayimage from '../assets/homeimages/image 78.png';
 .colorSquare-container{
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: .5px;
+}
+
+.colorSquare-container p{
+    font-size: 12px;
 }
 .twoColumnContainer{
     display: flex;
     flex-direction: row;
+    gap: 24px;
+}
+.colorSquresColumn{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
+
+
 .colorSquare{
-width: 80px;
-height: 80px;
+width: 100px;
+height: 100px;
 background-color: black;
 }
 
@@ -34,6 +46,28 @@ background-color: black;
     display: none;
 }
 
+#brightlineSquare{
+    background-color: #E2D3C8;
+}
+
+#msSquare{
+background-color: #D8DEE4;
+}
+
+#HandshakeSquare{
+    background-color: #D8E4D8;
+
+}
+
+#ytSquare{
+    background-color: #E2C8C8;
+
+}
+
+#spotifySquare{
+    background-color: #C8E2D9;
+
+}
 </style>
 
 <div class="full-container">
@@ -44,15 +78,19 @@ background-color: black;
             <div id="brightlineSquare" class="colorSquare"></div>
         </div>
         <div id="MicrsoftSquare-container" class="colorSquare-container">
-            <p>Brightline</p>
+            <p>Microsoft</p>
             <div id="msSquare" class="colorSquare"></div>
         </div>
         <div id="HandshakeSquare-container" class="colorSquare-container">
-            <p>Brightline</p>
+            <p>Handshake</p>
             <div id="HandshakeSquare" class="colorSquare"></div>
         </div>
+        <div id="YTShortsSquare-container" class="colorSquare-container">
+            <p>YouTube Shorts</p>
+            <div id="ytSquare" class="colorSquare"></div>
+        </div>
         <div id="spotifySquare-container" class="colorSquare-container">
-            <p>Brightline</p>
+            <p>Spotify</p>
             <div id="spotifySquare" class="colorSquare"></div>
         </div>
     </div>

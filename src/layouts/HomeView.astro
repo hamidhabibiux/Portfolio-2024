@@ -175,6 +175,7 @@ document.addEventListener('astro:page-load', () => {
 const casestudyItems = document.querySelectorAll('.casestudyItem');
 const smallRectangleItems = document.querySelectorAll('.colorSquare');
 const posterImages = document.querySelectorAll('.bigImageContainer img');
+const smallRectangleText = document.querySelectorAll('.colorSquare-container p');
 //new code
 const casestudyItemsArray = Array.from(casestudyItems);
 
@@ -195,6 +196,11 @@ casestudyItems.forEach(item => {
                     rectangle.style.backgroundColor = 'white'; // Change to desired color
                 }
             });
+        smallRectangleText.forEach((named, namedIndex) => {
+                if (namedIndex !== hoveredIndex) {
+                    named.style.color = 'white';
+                }
+        })
     }
     //end new code
 
@@ -226,6 +232,11 @@ casestudyItems.forEach(item => {
                     rectangle.style.backgroundColor = ''; // Change to desired color
                 }
             });
+            smallRectangleText.forEach((named, namedIndex) => {
+                if (namedIndex !== hoveredIndex) {
+                    named.style.color = '';
+                }
+        })
     }
     //end new code
     casestudyItems.forEach(otherItem => {
@@ -283,5 +294,5 @@ casestudyItems.forEach(item => {
             </div>
         </div>
     </div>
-    <!-- <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4505Qyq9QqasHylZLLXpmK?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> -->
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4505Qyq9QqasHylZLLXpmK?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     </div>
