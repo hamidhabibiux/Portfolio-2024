@@ -42,9 +42,7 @@ height: 100px;
 background-color: black;
 }
 
-.bigImageContainer img{
-    display: none;
-}
+
 
 #brightlineSquare{
     background-color: #E2D3C8;
@@ -66,7 +64,22 @@ background-color: #D8DEE4;
 
 #spotifySquare{
     background-color: #C8E2D9;
+    
 
+}
+
+.deselectedSquare{
+    opacity: 30%;
+}
+
+.deselectedText{
+    color: #C0B5AF;
+}
+
+.containerImg{display: none;}
+
+.imgLookAtMe{
+    display: block;
 }
 </style>
 
@@ -95,11 +108,11 @@ background-color: #D8DEE4;
         </div>
     </div>
     <div class="bigImageContainer">
-        <img src={rockimage.src} width={rockimage.width} height={rockimage.height}>
-        <img src={redimage.src} width={redimage.width} height={redimage.height}>
-        <img src={akira.src} width={akira.width} height={akira.height}>
-        <img src={blueimage.src} width={blueimage.width} height={blueimage.height}>
-        <img src={kayimage.src} width={kayimage.width} height={kayimage.height}>
+        <img class= 'containerImg' src={rockimage.src} width={rockimage.width} height={rockimage.height}>
+        <img class= 'containerImg' src={redimage.src} width={redimage.width} height={redimage.height}>
+        <img class= 'containerImg' src={akira.src} width={akira.width} height={akira.height}>
+        <img class= 'containerImg' src={blueimage.src} width={blueimage.width} height={blueimage.height}>
+        <img class= 'containerImg' src={kayimage.src} width={kayimage.width} height={kayimage.height}>
 
     </div>
 </div>
