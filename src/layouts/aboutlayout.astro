@@ -1,0 +1,102 @@
+---
+---
+
+<style>
+.casestudy-contentpadding{
+    padding:3vh;
+}
+h1{
+    font-size: 3rem;
+    color: #5B483E;
+    font-family: 'Inter Var';
+    font-weight: 700;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+h2{
+    font-size: 2.25rem;
+    color: #5B483E;
+    font-family: 'Inter Var';
+    font-weight: 700; /*originaly 580 */
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+h3{
+    font-size: 1.75rem;
+    font-family: 'Inter Var';
+    font-style: normal;
+    font-weight: 580;
+    color: #515155;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+h4{
+    font-family: 'Inter Var';
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 580;
+    color: #515155;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+p {
+    font-family: 'Inter Var';
+    color: #515155;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.3125rem;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+
+
+/**************************
+
+        Media Query
+
+***************************/
+
+@media screen and (max-width:430px){ /*Sets mobile margin to 16px */
+
+.casestudy-contentpadding{
+    padding:1vh;
+}
+}
+
+
+@media screen and (max-width: 500px){
+    .threeColumn{
+        grid-template-columns: none;
+        grid-template-rows: 1fr;
+    }
+    .twoColumn{
+        grid-template-columns: none;
+        grid-template-rows: 1fr;
+    }
+    .halfWidthText{
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width:877px) and (max-width:1039px){
+    .threeColumn{
+        grid-template-columns: none;
+        grid-template-rows: 1fr;
+    }
+    .twoColumn{
+        grid-template-columns: none;
+        grid-template-rows: 1fr;
+    }
+}
+
+</style>
+
+<div class="casestudy-contentpadding">
+    <h2>Thanks for swinging by!</h2>
+    <p>I'm a recent graduate from UC Berkeley, designing in the San Francisco Bay Area.</p>
+</div>
