@@ -1,4 +1,5 @@
 ---
+import smallCharacter from '../assets/about/persona.png';
 ---
 
 <style>
@@ -54,6 +55,27 @@ p {
 }
 
 
+.twoColumn{
+    display: grid;
+    grid-template-columns:repeat(2, auto);
+    gap: 1.5rem;
+}
+
+#flex24px{ /*24px flex */
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.casestudy-container{ /*36px margin top */
+margin-top: 2.25rem;
+}
+
+.casestudy-container48{
+    margin-top: 3rem;
+}
+
 
 /**************************
 
@@ -97,6 +119,19 @@ p {
 </style>
 
 <div class="casestudy-contentpadding">
-    <h2>Thanks for swinging by!</h2>
-    <p>I'm a recent graduate from UC Berkeley, designing in the San Francisco Bay Area.</p>
+    <div id="flex24px">
+        <h3>Thanks for swinging by!</h3>
+        <div class="twoColumn">
+            <p>I'm a recent graduate from UC Berkeley, designing in the San Francisco Bay Area.
+            <br /><br />
+            Although growing up, I never looked into design as a possible career, I always caught myself DIY-ing the things around me to fit the mood I was feeling at the time — from Wii remote skins to spray painting my first ever longboard.
+            <br /><br />
+            UX Design is where I’ve found my home in Design and Product, but I'm always curious of how far I can stretch my wings when it comes to building solutions for my community.
+            </p>
+            <img style="width: 100%; height: auto;" src={smallCharacter.src} width={smallCharacter.width} height={smallCharacter.height} />
+        </div>
+    </div>
+    <div class="casestudy-container48">
+        <h4>Some things I've worked on</h4>
+    </div>
 </div>
