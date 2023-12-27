@@ -431,7 +431,13 @@ import navigationVID from '../assets/Brightline/Video/navigationinmockup.mp4?url
 <script>
     //this script makes all the videos play on load
     const allVideos = document.querySelectorAll('#theVideo')
-    allVideos.forEach(item => {
-        item.play();
-    })
+    window.addEventListener('load', function() {
+        allVideos.forEach(items => {
+            items.load();
+            items.play();
+        })
+    });
+    
+    
+
 </script>
