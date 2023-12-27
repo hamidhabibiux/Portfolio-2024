@@ -1,5 +1,17 @@
 ---
 import smallCharacter from '../assets/about/persona.png';
+import taiwan1 from '../assets/about/taiwan1.jpg';
+import taiwan2 from '../assets/about/taiwan2.jpg';
+import taiwan3 from '../assets/about/taiwan3.jpg';
+import hawaii1 from '../assets/about/hawaii1.jpg';
+import hawaii2 from '../assets/about/hawaii2.jpg';
+import hawaii3 from '../assets/about/hawaii3.jpg';
+import hawaii4 from '../assets/about/hawaii4.jpeg';
+import japan1 from '../assets/about/japan1.jpeg';
+import japan2 from '../assets/about/japan3.jpeg';
+import japan3 from '../assets/about/japan2.jpeg';
+
+
 ---
 
 <style>
@@ -76,6 +88,26 @@ margin-top: 2.25rem;
     margin-top: 3rem;
 }
 
+.photo-sidescroll{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    height: 20vw;
+    overflow-x: scroll;
+    
+}
+
+.photoHeaderContainer{
+        width: 100%;
+
+}
+
+.biggerPhotoContainer{
+    display:flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
 
 /**************************
 
@@ -133,5 +165,41 @@ margin-top: 2.25rem;
     </div>
     <div class="casestudy-container48">
         <h4>Some things I've worked on</h4>
+        <div class="workList">
+
+        </div>
+    </div>
+    <div class="casestudy-container48">
+        <h4>Explore with me</h4>
+        <div id="flex24px" class="photoHeaderContainer">
+            <div class="biggerPhotoContainer">
+                <p>Taiwan - 2023</p>
+            <div class="photo-sidescroll">
+                <img style="width: auto; height: 100%;" src={taiwan1.src} height={taiwan1.height} width={taiwan1.width} />
+                <img style="width: auto; height: 100%;" src={taiwan2.src} height={taiwan2.height} width={taiwan2.width} />
+                <img style="width: auto; height: 100%;" src={taiwan3.src} height={taiwan3.height} width={taiwan3.width} />
+
+            </div>
+            </div>
+            <div class="biggerPhotoContainer">
+                <p>Japan - 2023</p>
+            <div class="photo-sidescroll">
+                <img style="width: auto; height: 100%;" src={japan1.src} height={japan1.height} width={japan1.width} />
+                <img style="width: auto; height: 100%;" src={japan2.src} height={japan2.height} width={japan2.width} />
+                <img style="width: auto; height: 100%;" src={japan3.src} height={japan3.height} width={japan3.width} />
+
+            </div>
+            </div>
+            <div class="biggerPhotoContainer">
+            <p>Hawaii - 2022</p>
+            <div class="photo-sidescroll">
+                <img style="width: auto; height: 100%;" src={hawaii1.src} height={hawaii1.height} width={hawaii1.width} />
+                <img style="width: auto; height: 100%;" src={hawaii2.src} height={hawaii2.height} width={hawaii2.width} />
+                <img style="width: auto; height: 100%;" src={hawaii3.src} height={hawaii3.height} width={hawaii3.width} />
+                <img style="width: auto; height: 100%;" src={hawaii4.src} height={hawaii4.height} width={hawaii4.width} />
+
+            </div>
+            </div>
+        </div>
     </div>
 </div>
