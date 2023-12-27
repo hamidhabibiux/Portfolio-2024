@@ -208,6 +208,11 @@ p.chipText{
     margin-bottom:2rem;
 }
 
+.fullSizeVideo{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
 
 /***********************************
         Case Study Content
